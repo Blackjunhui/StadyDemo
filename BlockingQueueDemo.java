@@ -1,6 +1,4 @@
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @Author: zjh
@@ -11,8 +9,8 @@ import java.util.concurrent.TimeUnit;
  * 阻塞队列:队列保持先进先出原则。设定特定的阻塞队列值，当队列为空时，取出操作阻塞；当队列满时，添加操作阻塞
  * ArrayBlockingQueue,LinkedBlockingQueue 是有界阻塞队列
  * DelayQueue 使用优先级队列实现的延时无界阻塞队列
- * PriorityQueue 支持优先级排序的无界阻塞队列
- * LinkedBlockingDeque 链式双端阻塞队列
+ * PriorityBlockingQueue 支持优先级排序的无界阻塞队列
+ * LinkedBlockingDeque 链式双端有界阻塞队列
  * LinkedTransferQueue 链式无界阻塞队列
  * SynchronousQueue 不存储元素的阻塞队列，也即单个元素队列
  *
@@ -25,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 public class BlockingQueueDemo {
 
     public static void main(String[] args) throws InterruptedException {
-
     }
 
     //过时不候式
